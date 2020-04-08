@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/productbilling
+    username: root
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  jpa:
+    generate-ddl: TRUE
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+   
+paypal:
+    client:
+        id: AdYEPgUGiAtOX4kukiqpn6r5ez3SI9MIr20KHKVbYF_rydU-j8ix3BSzPu3JhSsJVYZeLA2NdTNPEYXx
+        secret: EAg-meTGU_KOynLKY4MNz9iRHpyVXsW2oRNu3plEtYKaAvhvGRO-i-vEhLpdmAMp5hc5utGm2hhH2aLr
+    mode: sandbox
+    
+
