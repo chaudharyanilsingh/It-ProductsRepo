@@ -28,8 +28,8 @@ public class PaypalController {
 		try {
 
 			Payment payment = service.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
-					order.getIntent(), order.getDescription(), "http://localhost:8080/pay/cancel",
-					"http://localhost:8080/pay/success");
+					order.getIntent(), order.getDescription(), "https://it-product.herokuapp.com/pay/cancel",
+					"https://it-product.herokuapp.com/pay/success");
 			for (Links link : payment.getLinks()) {
 				if (link.getRel().equals("approval_url")) {
 					return "redirect:" + link.getHref();
