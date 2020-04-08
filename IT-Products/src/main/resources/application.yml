@@ -1,9 +1,8 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: root
-    url: jdbc:mysql://localhost:3306/productbilling
-    username: root
+    password: f718fb8fc388f4c749e3d76be262376b1cab15ca7a84eae81c31e8f05fd8e6e4
+    url: postgres://fpoftlqgrvxpvh:f718fb8fc388f4c749e3d76be262376b1cab15ca7a84eae81c31e8f05fd8e6e4@ec2-34-235-108-68.compute-1.amazonaws.com:5432/d2flgo3uli11na
+    username: fpoftlqgrvxpvh
 
   mvc:
     view:
